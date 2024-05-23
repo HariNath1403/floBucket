@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" defer src="js/controller.js"></script>
+    <title>The Flo Buc Project</title>
+  </head>
+  <body>
+    <div class="container login" id="login">
+      <div class="login__header">
+        <h1 class="login__header--title">The Flo Bucket Project</h1>
+        <img
+          class="login__header--logo"
+          src="imgs/main logo (yellow).png"
+          alt="main logo (Flo Bucket)"
+        />
+      </div>
+      <div class="login__password">
+        <input
+          type="password"
+          placeholder="Input password here..."
+          class="login__password--input"
+        />
+      </div>
+      <div class="login__command">
+        <button class="login__command--habits">Habits</button
+        ><button class="login__command--goals">Goals</button>
+      </div>
+    </div>
+    <div class="workspace" id="workspace">
+      <section class="container dashboard" id="dashboard">
+        <div class="dashboard__salutation">
+          <h3 class="dashboard__salutation--header">
+            Welcome
+            <span class="dashboard__salutation--header--user">Hari_14m</span> 🥳
+          </h3>
+        </div>
+        <div class="dashboard__goals">
+          <div class="dashboard__goals--box">
+            <h2
+              class="dashboard__goals--box--header dashboard__goals--box--header--1"
+            >
+              <span class="dashboard__goals--box--header--pre">Goal #1:</span>
+              <span class="dashboard__goals--box--header--goal"
+                >IT Courses</span
+              >
+            </h2>
+            <div class="dashboard__goals--box--chart">
+              <div
+                class="dashboard__goals--box--chart--container dashboard__goals--box--chart--container--1"
+                data-no="1"
+              >
+                <div
+                  class="dashboard__goals--box--chart--bar dashboard__goals--box--chart--bar--1"
+                  style="width: 20%"
+                >
+                  <img
+                    src="imgs/Icons/coding.png"
+                    class="dashboard__goals--box--chart--icon"
+                  />
+                </div>
+                <h2
+                  class="dashboard__goals--box--chart--percentage dashboard__goals--box--chart--percentage--1"
+                >
+                  20%
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__goals--box">
+            <h2
+              class="dashboard__goals--box--header dashboard__goals--box--header--2"
+            >
+              <span class="dashboard__goals--box--header--pre">Goal #2:</span>
+              <span class="dashboard__goals--box--header--goal">KAPS Exam</span>
+            </h2>
+            <div class="dashboard__goals--box--chart">
+              <div
+                class="dashboard__goals--box--chart--container dashboard__goals--box--chart--container--2"
+              >
+                <div
+                  class="dashboard__goals--box--chart--bar dashboard__goals--box--chart--bar--2"
+                  style="width: 30%"
+                >
+                  <img
+                    src="imgs/Icons/pets.png"
+                    class="dashboard__goals--box--chart--icon"
+                  />
+                </div>
+                <h2
+                  class="dashboard__goals--box--chart--percentage dashboard__goals--box--chart--percentage--2"
+                >
+                  30%
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__goals--box">
+            <h2
+              class="dashboard__goals--box--header dashboard__goals--box--header--3"
+            >
+              <span class="dashboard__goals--box--header--pre">Goal #3:</span>
+              <span class="dashboard__goals--box--header--goal"
+                >Non-Fiction</span
+              >
+            </h2>
+            <div class="dashboard__goals--box--chart">
+              <div
+                class="dashboard__goals--box--chart--container dashboard__goals--box--chart--container--3"
+              >
+                <div
+                  class="dashboard__goals--box--chart--bar dashboard__goals--box--chart--bar--3"
+                  style="width: 45%"
+                >
+                  <img
+                    src="imgs/Icons/reading.png"
+                    class="dashboard__goals--box--chart--icon"
+                  />
+                </div>
+                <h2
+                  class="dashboard__goals--box--chart--percentage dashboard__goals--box--chart--percentage--3"
+                >
+                  45%
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__goals--box">
+            <h2
+              class="dashboard__goals--box--header dashboard__goals--box--header--4"
+            >
+              <span class="dashboard__goals--box--header--pre">Goal #4:</span>
+              <span class="dashboard__goals--box--header--goal">Fitness</span>
+            </h2>
+            <div class="dashboard__goals--box--chart">
+              <div
+                class="dashboard__goals--box--chart--container dashboard__goals--box--chart--container--4"
+              >
+                <div
+                  class="dashboard__goals--box--chart--bar dashboard__goals--box--chart--bar--4"
+                  style="width: 15%"
+                >
+                  <img
+                    src="imgs/Icons/fitness.png"
+                    class="dashboard__goals--box--chart--icon"
+                  />
+                </div>
+                <h2
+                  class="dashboard__goals--box--chart--percentage dashboard__goals--box--chart--percentage--4"
+                >
+                  15%
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard__goals--box dashboard__goals--box--inactive">
+            <h2
+              class="dashboard__goals--box--header dashboard__goals--box--header--5"
+            >
+              <span class="dashboard__goals--box--header--pre">Goal #5:</span>
+            </h2>
+            <div class="dashboard__goals--box--chart">
+              <div
+                class="dashboard__goals--box--chart--container dashboard__goals--box--chart--container--5"
+              >
+                <div
+                  class="dashboard__goals--box--chart--bar dashboard__goals--box--chart--bar--5"
+                  style="width: 35%"
+                >
+                  <button
+                    class="dashboard__goals--box--chart--add dashboard__goals--box--chart--add--5"
+                  >
+                    Add
+                  </button>
+                </div>
+                <h2
+                  class="dashboard__goals--box--chart--percentage dashboard__goals--box--chart--percentage--5"
+                >
+                  -%
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="container goals" id="goals">
+        <div class="goals__workspace">
+          <div class="goals__workspace--form">
+            <div class="goals__workspace--form--row">
+              <label
+                for="goal-title"
+                class="goals__workspace--form--label goals__workspace--form--label--main"
+                ><span>Goal #1</span>
+                <span id="goal-overall-percentage">20%</span>
+              </label>
+              <input
+                type="text"
+                id="goal-title"
+                value="IT Courses"
+                maxlength="20"
+                class="goals__workspace--form--input goals__workspace--form--input--main"
+              />
+            </div>
+            <div class="goals__workspace--form--row">
+              <label
+                for="milestone-one"
+                class="goals__workspace--form--label goals__workspace--form--label--sub"
+                ><span>Milestone #1</span>
+                <span id="percentage-milestone-one">70%</span>
+              </label>
+              <input
+                type="text"
+                id="milestone-one"
+                class="goals__workspace--form--input goals__workspace--form--input--sub"
+              />
+
+              <div class="goals__workspace--form--trackers">
+                <label
+                  for="milestone-one-cur"
+                  class="goals__workspace--form--trackers--label"
+                  ><span>Current</span>
+                </label>
+                <input
+                  type="text"
+                  id="milestone-one-cur"
+                  class="goals__workspace--form--trackers--input"
+                />
+                <label
+                  for="milestone-one-total"
+                  class="goals__workspace--form--trackers--label"
+                  ><span>Total</span>
+                </label>
+                <input
+                  type="text"
+                  id="milestone-one-total"
+                  class="goals__workspace--form--trackers--input"
+                />
+              </div>
+            </div>
+            <div class="goals__workspace--form--row">
+              <label
+                for="milestone-two"
+                class="goals__workspace--form--label goals__workspace--form--label--sub"
+                ><span>Milestone #2</span>
+                <span id="percentage-milestone-two">0%</span>
+              </label>
+              <input
+                type="text"
+                id="milestone-two"
+                class="goals__workspace--form--input goals__workspace--form--input--sub"
+              />
+
+              <div class="goals__workspace--form--trackers">
+                <label
+                  for="milestone-two-cur"
+                  class="goals__workspace--form--trackers--label"
+                  ><span>Current</span>
+                </label>
+                <input
+                  type="text"
+                  id="milestone-two-cur"
+                  class="goals__workspace--form--trackers--input"
+                />
+                <label
+                  for="milestone-two-total"
+                  class="goals__workspace--form--trackers--label"
+                  ><span>Total</span>
+                </label>
+                <input
+                  type="text"
+                  id="milestone-two-total"
+                  class="goals__workspace--form--trackers--input"
+                />
+              </div>
+            </div>
+            <div class="goals__workspace--form--row">
+              <label
+                for="milestone-three"
+                class="goals__workspace--form--label goals__workspace--form--label--sub"
+                ><span>Milestone #3</span>
+                <span id="percentage-milestone-three">0%</span>
+              </label>
+              <input
+                type="text"
+                id="milestone-three"
+                class="goals__workspace--form--input goals__workspace--form--input--sub"
+              />
+
+              <div class="goals__workspace--form--trackers">
+                <label
+                  for="milestone-three-cur"
+                  class="goals__workspace--form--trackers--label"
+                  ><span>Current</span>
+                </label>
+                <input
+                  type="text"
+                  id="milestone-three-cur"
+                  class="goals__workspace--form--trackers--input"
+                />
+                <label
+                  for="milestone-three-total"
+                  class="goals__workspace--form--trackers--label"
+                  ><span>Total</span>
+                </label>
+                <input
+                  type="text"
+                  id="milestone-three-total"
+                  class="goals__workspace--form--trackers--input"
+                />
+              </div>
+            </div>
+
+            <div class="goals__workspace--form--row">
+              <label
+                class="goals__workspace--form--label goals__workspace--form--label--sub"
+                >Icon
+              </label>
+              <div class="goals__workspace--form--icon">
+                <button id="icon-select" class="goals__workspace--form--btn">
+                  Select
+                </button>
+                <div class="goals__workspace--form--icon--backdrop">
+                  <img
+                    class="goals__workspace--form--icon--backdrop--img"
+                    src="imgs/Icons/badminton.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goals__workspace--commands">
+            <button
+              class="goals__workspace--commands--btn goals__workspace--commands--btn--save"
+            >
+              Save
+            </button>
+            <button
+              class="goals__workspace--commands--btn goals__workspace--commands--btn--del"
+            >
+              Delete
+            </button>
+          </div>
+          <div class="goals__workspace--exit">
+            <button class="goals__workspace--exit--btn">X</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <aside class="popup" id="popup">
+      <div class="popup__container">
+        <div class="popup__message">
+          <p class="popup__message--text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+            molestias ipsum. Dolorum sit ipsam perferendis deleniti facere,
+            tempora odit culpa quod. Aut iste corrupti est explicabo quos non
+            eaque consequuntur!
+          </p>
+        </div>
+        <div class="popup__commands">
+          <button class="popup__commands--btn popup__commands--btn--yes">
+            Yes
+          </button>
+          <button class="popup__commands--btn popup__commands--btn--ok">
+            Ok
+          </button>
+          <button class="popup__commands--btn popup__commands--btn--no">
+            No
+          </button>
+        </div>
+        <div class="popup__exit">
+          <button class="popup__exit--btn">X</button>
+        </div>
+      </div>
+    </aside>
+    <aside class="icons" id="icons">
+      <div class="icons__container">
+        <div class="icons__frame"></div>
+        <!-- <div class="icons__select">
+          <button class="icons__select--btn">SELECT</button>
+        </div> -->
+        <div class="icons__exit">
+          <button class="icons__exit--btn">X</button>
+        </div>
+      </div>
+    </aside>
+    <div class="spinner" id="spinner">
+      <div class="spinner__icon"></div>
+    </div>
+    <section class="container habits" id="habits">
+      <div class="habits__header">
+        <h2 class="habits__header--txt">Activity Tracker</h2>
+      </div>
+      <div class="habits__content">
+        <figure class="habits__content--box habits__content--box--1">
+          <div
+            class="habits__content--box--figure habits__content--box--figure--1"
+          >
+            <img src="imgs/Tracker/study.png" alt="logo" />
+          </div>
+          <div class="habits__content--box--description">
+            <h3 class="habits__content--box--header">Study Sessions</h3>
+            <div class="habits__content--box--analysis">
+              <button
+                class="habits__content--box--analysis--btn habits__content--box--analysis--btn--1"
+                data-set="1"
+              >
+                Track
+              </button>
+              <h4 class="habits__content--box--analysis--tracked">
+                Last tracked on 14/05/2024. :(
+              </h4>
+            </div>
+          </div>
+        </figure>
+        <figure class="habits__content--box habits__content--box--2">
+          <div
+            class="habits__content--box--figure habits__content--box--figure--2"
+          >
+            <img src="imgs/Tracker/tiktok.png" alt="logo" />
+          </div>
+          <div class="habits__content--box--description">
+            <h3 class="habits__content--box--header">Reduce Screen Time</h3>
+            <div class="habits__content--box--analysis">
+              <button
+                class="habits__content--box--analysis--btn habits__content--box--analysis--btn--2"
+                data-set="2"
+              >
+                Track
+              </button>
+              <h4 class="habits__content--box--analysis--tracked">
+                Tracked today.[Completed 5x/week]
+              </h4>
+            </div>
+          </div>
+        </figure>
+        <figure class="habits__content--box habits__content--box--3">
+          <div
+            class="habits__content--box--figure habits__content--box--figure--3"
+          >
+            <img src="imgs/Tracker/gym.png" alt="logo" />
+          </div>
+          <div class="habits__content--box--description">
+            <h3 class="habits__content--box--header">Regular Exercise</h3>
+            <div class="habits__content--box--analysis">
+              <button
+                class="habits__content--box--analysis--btn habits__content--box--analysis--btn--3"
+                data-set="3"
+              >
+                Track
+              </button>
+              <h4 class="habits__content--box--analysis--tracked">
+                Tracked 2 days back.[Completed 3x/week] :(
+              </h4>
+            </div>
+          </div>
+        </figure>
+        <figure class="habits__content--box habits__content--box--4">
+          <div
+            class="habits__content--box--figure habits__content--box--figure--4"
+          >
+            <img src="imgs/Tracker/cerebral.png" alt="logo" />
+          </div>
+          <div class="habits__content--box--description">
+            <h3 class="habits__content--box--header">Daily Reading</h3>
+            <div class="habits__content--box--analysis">
+              <button
+                class="habits__content--box--analysis--btn habits__content--box--analysis--btn--4"
+                data-set="4"
+              >
+                Track
+              </button>
+              <h4 class="habits__content--box--analysis--tracked">
+                Tracked yesterday.[Completed 5x/week]
+              </h4>
+            </div>
+          </div>
+        </figure>
+        <figure class="habits__content--box habits__content--box--5">
+          <div
+            class="habits__content--box--figure habits__content--box--figure--5"
+          >
+            <img src="imgs/Tracker/gaming.png" alt="logo" />
+          </div>
+          <div class="habits__content--box--description">
+            <h3 class="habits__content--box--header">Gaming Time</h3>
+            <div class="habits__content--box--analysis">
+              <button
+                class="habits__content--box--analysis--btn habits__content--box--analysis--btn--5"
+                data-set="5"
+              >
+                Track
+              </button>
+              <h4 class="habits__content--box--analysis--tracked">
+                Tracked yesterday.[Completed 5x/week]
+              </h4>
+            </div>
+          </div>
+        </figure>
+      </div>
+      <div class="habits__footer">
+        <h4 class="habits__footer--txt">Developed by Hari</h4>
+      </div>
+    </section>
+  </body>
+</html>

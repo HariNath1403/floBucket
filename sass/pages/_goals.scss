@@ -1,0 +1,175 @@
+.workspace {
+  // display: flex;
+  position: relative;
+}
+
+.goals {
+  // display: none;
+  transform: translateX(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s;
+
+  &__workspace {
+    transform: translateY(-2.5%);
+    width: 85%;
+    height: 85%;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    padding: $space-gap $space-sub $space-sub;
+    // background-color: $color-yellow;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba($color-white, 0.95),
+      rgba($color-yellow, 0.5),
+      rgba($color-white, 0.95)
+    );
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      gap: calc(#{$space-gap + $space-sub}/ 2);
+      // gap: $space-sub;
+
+      &--row {
+        display: flex;
+        flex-direction: column;
+        gap: $space-mini;
+      }
+
+      &--label {
+        color: $color-pink;
+        font-size: $text-small;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+
+        &--main {
+          font-size: $text-standard;
+          font-weight: 700;
+          padding-right: $space-sub;
+        }
+      }
+
+      &--input {
+        color: $color-white;
+        font-size: $text-small;
+        font-family: inherit;
+        letter-spacing: inherit;
+        padding: $space-supersmall;
+        background-color: $color-pink;
+        border: none;
+
+        &--main {
+          font-size: $text-standard;
+        }
+      }
+
+      &--trackers {
+        display: flex;
+        justify-content: space-between;
+
+        &--label {
+          font-size: $text-small;
+          font-weight: 500;
+          color: $color-blue;
+        }
+
+        &--input {
+          background-color: $color-blue;
+          color: $color-white;
+          padding: 0 $space-supersmall;
+          font-size: $text-small;
+          font-family: inherit;
+          letter-spacing: inherit;
+          border: none;
+          width: 20%;
+        }
+      }
+
+      &--icon {
+        display: flex;
+        align-items: center;
+        gap: $space-small;
+
+        img {
+          width: $space-gap;
+          height: $space-gap;
+        }
+
+        &--backdrop {
+          background-color: $color-blue;
+          background-color: $color-pink;
+          width: $space-standard;
+          height: $space-standard;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &--btn {
+        // display: inline-block;
+        // visibility: visible;
+        // opacity: 1;
+        // pointer-events: all;
+        letter-spacing: 1.4px;
+        padding: $space-supersmall $space-mini;
+        font-size: $text-small;
+        font-weight: 500;
+        background-color: $color-green;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      }
+    }
+
+    &--commands {
+      margin-top: $space-small;
+      display: flex;
+      gap: $space-small;
+      justify-content: flex-end;
+
+      &--btn {
+        letter-spacing: 1.4px;
+        padding: $space-supersmall $space-mini;
+        font-size: $text-small;
+        background-color: $color-green;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+
+        &--del {
+          background-color: $color-red;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.goals__workspace {
+  position: relative;
+
+  &--exit {
+    position: absolute;
+    top: $space-supersmall;
+    right: $space-supersmall;
+
+    &--btn {
+      letter-spacing: 1.4px;
+      padding: $space-supersmall $space-mini;
+      font-size: $text-small;
+      color: $color-white;
+      background-color: $color-red;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+  }
+}

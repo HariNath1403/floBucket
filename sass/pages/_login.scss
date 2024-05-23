@@ -1,0 +1,85 @@
+#workspace {
+  display: none;
+}
+#habits {
+  display: none;
+}
+#login {
+  max-width: $max-width;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-xtra-1, 0.15),
+      rgba($color-xtra-2, 0.85),
+      rgba($color-xtra-3, 0.95),
+      rgba($color-xtra-4, 0.25),
+      rgba($color-xtra-5, 0.85)
+    ),
+    url('../imgs/background.jpg');
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__header {
+    margin-top: $space-widegap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $space-standard;
+
+    &--title {
+      font-size: calc(#{$text-emphasize + $text-big}/ 2);
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+      color: $color-xtra-4;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    &--logo {
+      width: $space-big;
+      height: $space-big;
+    }
+  }
+
+  &__password {
+    margin-top: $space-decent;
+    font-size: $text-standard;
+
+    &--input {
+      font-size: inherit;
+      font-family: inherit;
+      padding: $space-mini;
+      color: $color-xtra-5;
+      background-color: $color-xtra-4;
+    }
+  }
+
+  &__command {
+    margin-top: $space-standard;
+    display: flex;
+    gap: $space-small;
+
+    button {
+      color: $color-white;
+      padding: $space-supersmall $space-mini;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      font-size: $text-standard;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border: none;
+    }
+
+    &--habits {
+      background-color: $color-yellow;
+    }
+
+    &--goals {
+      background-color: $color-blue;
+    }
+  }
+}

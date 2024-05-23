@@ -1,0 +1,202 @@
+// For Popup Windows
+.workspace {
+  position: relative;
+}
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color-white, 0.15);
+
+  &__container {
+    position: relative;
+    width: 85%;
+    height: auto;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.35);
+    margin: $space-decent auto;
+    border-radius: 3px;
+    padding: $space-gap $space-small;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba($color-white, 0.75),
+        rgba($color-blue, 1),
+        rgba($color-green, 0.85),
+        rgba($color-blue, 0.95)
+      ),
+      url(../imgs/background.jpg);
+    // position: relative;
+  }
+
+  &__message {
+    padding: $space-gap $space-mini;
+
+    &--text {
+      font-size: $text-standard;
+      font-weight: 500;
+      text-align: left;
+      line-height: 1.6;
+      color: $color-white;
+    }
+  }
+
+  &__commands {
+    text-align: center;
+
+    &--btn {
+      letter-spacing: 1.4px;
+      padding: $space-mini $space-small;
+      font-size: $text-emphasize;
+      color: $color-white;
+      background-color: $color-pink;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      width: $space-widegap;
+
+      &--no {
+        background-color: $color-red;
+      }
+
+      &:not(:last-child) {
+        margin-right: $space-gap;
+      }
+
+      &--inactive {
+        display: none;
+      }
+    }
+  }
+
+  &__exit {
+    position: absolute;
+    top: $space-small;
+    right: $space-mini;
+
+    &--btn {
+      letter-spacing: 1.4px;
+      padding: $space-supersmall $space-mini;
+      font-size: $text-standard;
+      color: $color-white;
+      background-color: $color-red;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+  }
+}
+
+// For Icon Popups
+.workspace {
+  position: relative;
+}
+.icons {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color-white, 0.75);
+
+  &__container {
+    position: relative;
+    width: 85%;
+    height: auto;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.35);
+    margin: $space-decent auto;
+    border-radius: 3px;
+    padding: $space-gap $space-small;
+    background-color: $color-black;
+  }
+
+  &__frame {
+    padding: $space-gap $space-small $space-sub;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: $space-small;
+    align-items: center;
+    justify-content: space-between;
+
+    &--icon {
+      width: $space-gap;
+      height: $space-gap;
+    }
+  }
+  /*
+  &__select {
+    margin: $space-mini auto $space-supersmall;
+    display: flex;
+    justify-content: center;
+
+    &--btn {
+      letter-spacing: 1.4px;
+      padding: $space-mini $space-small;
+      font-size: $text-small;
+      color: $color-white;
+      background-color: $color-green;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+  }
+*/
+  &__exit {
+    position: absolute;
+    top: $space-small;
+    right: $space-mini;
+
+    &--btn {
+      letter-spacing: 1.4px;
+      padding: $space-supersmall $space-mini;
+      font-size: $text-standard;
+      color: $color-white;
+      background-color: $color-red;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+  }
+}
+
+// For spinner
+body {
+  position: relative;
+}
+
+.spinner {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: calc(#{$space-big * 2});
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: rgba($color-white, 0.35);
+  backdrop-filter: blur(5px);
+  &__icon {
+    border: 16px solid $color-grey; /* Light grey */
+    border-top: 16px solid $color-blue; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

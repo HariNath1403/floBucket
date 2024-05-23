@@ -1,0 +1,153 @@
+.habits {
+  display: block;
+  max-width: $max-width;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-xtra-1, 0.15),
+      rgba($color-xtra-2, 0.25),
+      rgba($color-xtra-3, 0.15),
+      rgba($color-xtra-4, 0.85),
+      rgba($color-white, 0.95)
+    ),
+    url('../imgs/background.jpg');
+
+  &__header {
+    margin-top: $space-gap;
+    display: flex;
+    justify-content: center;
+
+    &--txt {
+      font-size: calc(#{$text-big + $text-emphasize}/ 2);
+      font-weight: 700;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        to right,
+        $color-xtra-1,
+        $color-xtra-2,
+        $color-xtra-3,
+        $color-xtra-5
+      );
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      transform: scale(1.15);
+    }
+  }
+
+  &__content {
+    margin-top: $space-standard;
+    display: flex;
+    flex-direction: column;
+    gap: $space-standard;
+
+    &--box {
+      display: flex;
+      gap: $space-small;
+
+      &--figure {
+        padding: $space-small;
+        width: $space-widegap;
+        height: $space-widegap;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--1 {
+          background-color: $color-xtra-1;
+        }
+
+        &--2 {
+          background-color: $color-xtra-2;
+        }
+
+        &--3 {
+          background-color: $color-xtra-3;
+        }
+
+        &--4 {
+          background-color: $color-xtra-4;
+        }
+
+        &--5 {
+          background-color: $color-xtra-5;
+        }
+
+        img {
+          width: $space-margin;
+          height: $space-margin;
+        }
+      }
+
+      &--description {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &--header {
+        font-size: $text-standard;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      &--analysis {
+        display: flex;
+        gap: $space-mini;
+        margin-top: $space-supersmall;
+        height: calc(#{$space-standard} + $space-gap) / 2;
+
+        &--btn {
+          width: 30%;
+          width: $space-big;
+          height: calc(#{$space-standard} + $space-gap) / 2;
+          font-size: $text-small;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          color: $color-white;
+          // border: none;
+
+          &--1 {
+            background-color: $color-xtra-1;
+          }
+
+          &--2 {
+            background-color: $color-xtra-2;
+          }
+
+          &--3 {
+            background-color: $color-xtra-3;
+          }
+
+          &--4 {
+            background-color: $color-xtra-4;
+            color: $color-text;
+          }
+
+          &--5 {
+            background-color: $color-xtra-5;
+          }
+        }
+
+        &--tracked {
+          font-size: $text-small;
+          font-weight: 300;
+          width: 70%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    margin: $space-small;
+    text-align: center;
+
+    &--txt {
+      font-size: $text-supersmall;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 1.8px;
+    }
+  }
+}
