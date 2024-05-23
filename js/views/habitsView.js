@@ -44,9 +44,9 @@ class HabitsView {
     } else if (diff === 2) {
       displayTxt = 'Tracked 2 days ago. Work harder.';
     } else if (diff > 5) {
-      displayTxt = 'Last tracked more than 5 days ago. 😔';
+      displayTxt = `Last tracked: ${item} days ago. 😔`;
     } else {
-      displayTxt = `Tracked ${num} days ago. Don't give up!`;
+      displayTxt = `Tracked ${item} days ago. Don't give up!`;
     }
 
     location.insertAdjacentHTML('beforeend', displayTxt);
@@ -56,7 +56,7 @@ class HabitsView {
     let child = target.textContent;
 
     child = child.trim().replace(/\s+/g, ' ');
-    child = 'Tracked today. Great job! Stay focused';
+    child = 'Tracked today. Great job! 🎉';
     return child;
   }
 
