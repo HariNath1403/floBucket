@@ -38,7 +38,7 @@ class HabitsView {
     let displayTxt;
 
     if (diff === 0) {
-      displayTxt = 'Tracked today. Great job! Stay focused';
+      displayTxt = 'Tracked today. Great job! 🎉';
     } else if (diff === 1) {
       displayTxt = 'Tracked yesterday. Good work!';
     } else if (diff === 2) {
