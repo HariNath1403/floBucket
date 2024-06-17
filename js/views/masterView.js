@@ -26,5 +26,5 @@ export default class Master {
   );
 
   // prettier-ignore
-  iconNames = ['badminton', 'baking', 'boxing', 'camping', 'coding', 'construction', 'cooking', 'dieting','djing', 'drinking', 'electronics',   'filming', 'fishing', 'fitness', 'gaming', 'gardening', 'gym', 'hiking', 'journaling',   'language', 'music', 'netflix', 'painting',   'pets', 'photography', 'reading', 'sailing',   'sewing', 'sleeping', 'smoking', 'sports',   'swimming', 'ubering', 'vacation', 'youtubing', 'romance', 'trading', 'archery', 'mechanic', 'tech', 'stockoverflow', 'solar', 'soccer', 'jersey', 'cart'].sort();
+  iconNames = ['badminton', 'baking', 'boxing', 'camping', 'coding', 'construction', 'cooking', 'dieting','djing', 'drinking', 'electronics',   'filming', 'fishing', 'fitness', 'gaming', 'gardening', 'gym', 'hiking', 'journaling',   'language', 'music', 'netflix', 'painting',   'pets', 'photography', 'reading', 'sailing',   'sewing', 'sleeping', 'smoking', 'volley',   'swimming', 'ubering', 'vacation', 'youtubing', 'romance', 'trading', 'archery', 'mechanic', 'tech', 'stockoverflow', 'solar', 'soccer', 'jersey', 'cart'].sort();
 }
