@@ -420,6 +420,8 @@ class GoalsViews extends Master {
   }
 
   async loadNthGoalForm(obj, no) {
+    window.scroll(0, 0);
+
     const status = obj.active;
     let fullMarkup;
     this.formNthGoal.innerHTML = '';

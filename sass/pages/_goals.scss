@@ -26,7 +26,7 @@
     background-image: linear-gradient(
       to bottom right,
       rgba($color-white, 0.95),
-      rgba($color-yellow, 0.5),
+      rgba($color-xtra-4, 0.5),
       rgba($color-white, 0.95)
     );
 
@@ -58,6 +58,7 @@
 
       &--input {
         color: $color-white;
+        color: $color-text;
         font-size: $text-small;
         font-family: inherit;
         letter-spacing: inherit;
@@ -104,7 +105,7 @@
 
         &--backdrop {
           background-color: $color-blue;
-          background-color: $color-pink;
+          background-color: $color--5;
           width: $space-standard;
           height: $space-standard;
           display: flex;
@@ -122,7 +123,7 @@
         padding: $space-supersmall $space-mini;
         font-size: $text-small;
         font-weight: 500;
-        background-color: $color-green;
+        background-color: $color-xtra-3;
         border: none;
         border-radius: 3px;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -139,13 +140,13 @@
         letter-spacing: 1.4px;
         padding: $space-supersmall $space-mini;
         font-size: $text-small;
-        background-color: $color-green;
+        background-color: $color-xtra-3;
         border: none;
         border-radius: 3px;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
 
         &--del {
-          background-color: $color-red;
+          background-color: $color-xtra-1;
           color: $color-white;
         }
       }
@@ -166,7 +167,7 @@
       padding: $space-supersmall $space-mini;
       font-size: $text-small;
       color: $color-white;
-      background-color: $color-red;
+      background-color: $color-xtra-1;
       border: none;
       border-radius: 3px;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);

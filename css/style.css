@@ -26,7 +26,7 @@ body {
   overflow-x: hidden; }
 
 .container {
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8) 40%, rgba(242, 159, 5, 0.15), rgba(255, 255, 255, 0.95) 80%), url("../imgs/background.jpg");
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8) 40%, rgba(244, 240, 187, 0.15), rgba(255, 255, 255, 0.95) 80%), url("../imgs/background.jpg");
   height: 100vh;
   width: 100%;
   padding: 2.8rem 1.8rem; }
@@ -50,7 +50,7 @@ body {
     margin: 7.2rem auto;
     border-radius: 3px;
     padding: 3.6rem 1.8rem;
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.75), #048abf, rgba(96, 191, 129, 0.85), rgba(4, 138, 191, 0.95)), url(../imgs/background.jpg); }
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.75), #f29f05, rgba(135, 195, 143, 0.85), rgba(242, 159, 5, 0.95)), url(../imgs/background.jpg); }
   .popup__message {
     padding: 3.6rem 1.2rem; }
     .popup__message--text {
@@ -66,13 +66,13 @@ body {
       padding: 1.2rem 1.8rem;
       font-size: 2.4rem;
       color: #ffffff;
-      background-color: #f2668b;
+      background-color: #88b0bf;
       border: none;
       border-radius: 3px;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
       width: 8.4rem; }
       .popup__commands--btn--no {
-        background-color: #f20f38; }
+        background-color: #da2c38; }
       .popup__commands--btn:not(:last-child) {
         margin-right: 3.6rem; }
       .popup__commands--btn--inactive {
@@ -86,7 +86,7 @@ body {
       padding: 0.6rem 1.2rem;
       font-size: 2rem;
       color: #ffffff;
-      background-color: #f20f38;
+      background-color: #da2c38;
       border: none;
       border-radius: 3px;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
@@ -149,7 +149,7 @@ body {
       padding: 0.6rem 1.2rem;
       font-size: 2rem;
       color: #ffffff;
-      background-color: #f20f38;
+      background-color: #da2c38;
       border: none;
       border-radius: 3px;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
@@ -175,7 +175,7 @@ body {
   .spinner__icon {
     border: 16px solid #bfbfbf;
     /* Light grey */
-    border-top: 16px solid #048abf;
+    border-top: 16px solid #f29f05;
     /* Blue */
     border-radius: 50%;
     width: 120px;
@@ -187,6 +187,9 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+#dashboard {
+  height: 200vh; }
 
 .dashboard__salutation {
   text-align: center;
@@ -211,10 +214,16 @@ body {
       font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: 1.05px; }
-      .dashboard__goals--box--header--1, .dashboard__goals--box--header--3, .dashboard__goals--box--header--5 {
-        color: #048abf; }
-      .dashboard__goals--box--header--2, .dashboard__goals--box--header--4 {
-        color: #f2668b; }
+      .dashboard__goals--box--header--1, .dashboard__goals--box--header--6 {
+        color: #da2c38; }
+      .dashboard__goals--box--header--2, .dashboard__goals--box--header--7 {
+        color: #226f54; }
+      .dashboard__goals--box--header--3, .dashboard__goals--box--header--8 {
+        color: #87c38f; }
+      .dashboard__goals--box--header--4, .dashboard__goals--box--header--9 {
+        color: #88b0bf; }
+      .dashboard__goals--box--header--5, .dashboard__goals--box--header--10 {
+        color: #f29f05; }
     .dashboard__goals--box--chart {
       display: flex;
       flex-direction: column;
@@ -233,18 +242,30 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start; }
-        .dashboard__goals--box--chart--bar--1, .dashboard__goals--box--chart--bar--3, .dashboard__goals--box--chart--bar--5 {
-          background-color: #048abf; }
-        .dashboard__goals--box--chart--bar--2, .dashboard__goals--box--chart--bar--4 {
-          background-color: #f2668b; }
+        .dashboard__goals--box--chart--bar--1, .dashboard__goals--box--chart--bar--6 {
+          background-color: #da2c38; }
+        .dashboard__goals--box--chart--bar--2, .dashboard__goals--box--chart--bar--7 {
+          background-color: #226f54; }
+        .dashboard__goals--box--chart--bar--3, .dashboard__goals--box--chart--bar--8 {
+          background-color: #87c38f; }
+        .dashboard__goals--box--chart--bar--4, .dashboard__goals--box--chart--bar--9 {
+          background-color: #88b0bf; }
+        .dashboard__goals--box--chart--bar--5, .dashboard__goals--box--chart--bar--10 {
+          background-color: #f29f05; }
       .dashboard__goals--box--chart--percentage {
         font-size: 3.6rem;
         font-weight: 700;
         margin-left: auto; }
-        .dashboard__goals--box--chart--percentage--1, .dashboard__goals--box--chart--percentage--3, .dashboard__goals--box--chart--percentage--5 {
-          color: #048abf; }
-        .dashboard__goals--box--chart--percentage--2, .dashboard__goals--box--chart--percentage--4 {
-          color: #f2668b; }
+        .dashboard__goals--box--chart--percentage--1, .dashboard__goals--box--chart--percentage--6 {
+          color: #da2c38; }
+        .dashboard__goals--box--chart--percentage--2, .dashboard__goals--box--chart--percentage--7 {
+          color: #226f54; }
+        .dashboard__goals--box--chart--percentage--3, .dashboard__goals--box--chart--percentage--8 {
+          color: #87c38f; }
+        .dashboard__goals--box--chart--percentage--4, .dashboard__goals--box--chart--percentage--9 {
+          color: #88b0bf; }
+        .dashboard__goals--box--chart--percentage--5, .dashboard__goals--box--chart--percentage--10 {
+          color: #f29f05; }
       .dashboard__goals--box--chart--icon {
         width: 5.6rem;
         height: auto;
@@ -274,10 +295,16 @@ body {
   .dashboard__goals--box--inactive .dashboard__goals--box--chart--add:hover {
     cursor: pointer;
     transform: translateY(-50%) scale(1.05); }
-  .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--1, .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--3, .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--5 {
-    background-color: #048abf; }
-  .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--2, .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--4 {
-    background-color: #f2668b; }
+  .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--1, .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--6 {
+    color: #da2c38; }
+  .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--2, .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--7 {
+    color: #226f54; }
+  .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--3, .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--8 {
+    color: #87c38f; }
+  .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--4, .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--9 {
+    color: #88b0bf; }
+  .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--5, .dashboard__goals--box--inactive .dashboard__goals--box--chart--add--10 {
+    color: #f29f05; }
 
 .dashboard__goals--box--inactive .dashboard__goals--box--chart--percentage {
   color: #bfbfbf; }
@@ -302,7 +329,7 @@ body {
     height: 85%;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     padding: 3.6rem 2.8rem 2.8rem;
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(242, 159, 5, 0.5), rgba(255, 255, 255, 0.95)); }
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(244, 240, 187, 0.5), rgba(255, 255, 255, 0.95)); }
     .goals__workspace--form {
       display: flex;
       flex-direction: column;
@@ -312,7 +339,7 @@ body {
         flex-direction: column;
         gap: 1.2rem; }
       .goals__workspace--form--label {
-        color: #f2668b;
+        color: #88b0bf;
         font-size: 1.6rem;
         font-weight: 500;
         display: flex;
@@ -323,11 +350,12 @@ body {
           padding-right: 2.8rem; }
       .goals__workspace--form--input {
         color: #ffffff;
+        color: #1d1c26;
         font-size: 1.6rem;
         font-family: inherit;
         letter-spacing: inherit;
         padding: 0.6rem;
-        background-color: #f2668b;
+        background-color: #88b0bf;
         border: none; }
         .goals__workspace--form--input--main {
           font-size: 2rem; }
@@ -337,9 +365,9 @@ body {
         .goals__workspace--form--trackers--label {
           font-size: 1.6rem;
           font-weight: 500;
-          color: #048abf; }
+          color: #f29f05; }
         .goals__workspace--form--trackers--input {
-          background-color: #048abf;
+          background-color: #f29f05;
           color: #ffffff;
           padding: 0 0.6rem;
           font-size: 1.6rem;
@@ -355,8 +383,8 @@ body {
           width: 3.6rem;
           height: 3.6rem; }
         .goals__workspace--form--icon--backdrop {
-          background-color: #048abf;
-          background-color: #f2668b;
+          background-color: #f29f05;
+          background-color: #f29f05;
           width: 4.8rem;
           height: 4.8rem;
           display: flex;
@@ -367,7 +395,7 @@ body {
         padding: 0.6rem 1.2rem;
         font-size: 1.6rem;
         font-weight: 500;
-        background-color: #60bf81;
+        background-color: #87c38f;
         border: none;
         border-radius: 3px;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
@@ -380,12 +408,12 @@ body {
         letter-spacing: 1.4px;
         padding: 0.6rem 1.2rem;
         font-size: 1.6rem;
-        background-color: #60bf81;
+        background-color: #87c38f;
         border: none;
         border-radius: 3px;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
         .goals__workspace--commands--btn--del {
-          background-color: #f20f38;
+          background-color: #da2c38;
           color: #ffffff; }
 
 .goals__workspace {
@@ -399,7 +427,7 @@ body {
       padding: 0.6rem 1.2rem;
       font-size: 1.6rem;
       color: #ffffff;
-      background-color: #f20f38;
+      background-color: #da2c38;
       border: none;
       border-radius: 3px;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
@@ -551,6 +579,6 @@ body {
       letter-spacing: 1.5px;
       border: none; }
     .login__command--habits {
-      background-color: #f29f05; }
+      background-color: #43291f; }
     .login__command--goals {
-      background-color: #048abf; }
+      background-color: #226f54; }

@@ -23,7 +23,7 @@
         to bottom right,
         rgba($color-white, 0.75),
         rgba($color-blue, 1),
-        rgba($color-green, 0.85),
+        rgba($color-xtra-3, 0.85),
         rgba($color-blue, 0.95)
       ),
       url(../imgs/background.jpg);
@@ -57,7 +57,7 @@
       width: $space-widegap;
 
       &--no {
-        background-color: $color-red;
+        background-color: $color-xtra-1;
       }
 
       &:not(:last-child) {
@@ -80,7 +80,7 @@
       padding: $space-supersmall $space-mini;
       font-size: $text-standard;
       color: $color-white;
-      background-color: $color-red;
+      background-color: $color-xtra-1;
       border: none;
       border-radius: 3px;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -154,7 +154,7 @@
       padding: $space-supersmall $space-mini;
       font-size: $text-standard;
       color: $color-white;
-      background-color: $color-red;
+      background-color: $color-xtra-1;
       border: none;
       border-radius: 3px;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);

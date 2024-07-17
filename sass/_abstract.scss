@@ -1,12 +1,6 @@
 // / 1. Colors
 $color-blue: #048abf;
 $color-pink: #f2668b;
-$color-yellow: #f2e205;
-$color-yellow: #f29f05;
-$color-green: #60bf81;
-$color-red: #f20f38;
-$color-purple: #a663cc;
-$color-bloou: #5adbff;
 
 $color-text: #1d1c26;
 $color-background: #eceff1;
@@ -22,6 +16,16 @@ $color-xtra-2: #226f54;
 $color-xtra-3: #87c38f;
 $color-xtra-4: #f4f0bb;
 $color-xtra-5: #43291f;
+
+$color--1: $color-xtra-1;
+$color--2: $color-xtra-2;
+$color--3: $color-xtra-3;
+$color--4: #f27b35;
+$color--4: #88b0bf;
+$color--5: #f29f05;
+
+$color-blue: $color--5;
+$color-pink: $color--4;
 
 // 2. Font size
 $text-header-main: 6.4rem;

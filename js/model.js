@@ -1,91 +1,5 @@
 import * as helper from './helper.js';
 
-/*
-export const allGoals = {
-  1: {
-    active: true,
-    content: {
-      main: 'IT Courses',
-      sub: {
-        milestones: [
-          'Complete JavaScript Course',
-          'Complete Node Js Course',
-          'Complete Flask Course',
-        ],
-        current: [100, 49, 2],
-        total: [100, 100, 80],
-        completion: [],
-      },
-      overall: null,
-      icon: 'coding',
-    },
-  },
-  2: {
-    active: true,
-    content: {
-      main: 'KAPS Exam',
-      sub: {
-        milestones: [
-          'Registration & Preparation',
-          'Complete the KAPS Exam',
-          'Complete IELTS',
-        ],
-        current: [5, 0, 0],
-        total: [6, 1, 1],
-        completion: [],
-      },
-      overall: null,
-      icon: 'pets',
-    },
-  },
-  3: {
-    active: true,
-    content: {
-      main: 'Non - Fiction',
-      sub: {
-        milestones: [
-          'Complete 7 Personal Growth Books',
-          'Complete 5 Fiction Books',
-          'Read 2 Books on Marketing',
-        ],
-        current: [3.5, 0, 0],
-        total: [7, 5, 2],
-        completion: [],
-      },
-      overall: null,
-      icon: 'reading',
-    },
-  },
-  4: {
-    active: false,
-    content: {
-      main: null,
-      sub: {
-        milestones: [null, null, null],
-        current: [null, null, null],
-        total: [null, null, null],
-        completion: [],
-      },
-      overall: null,
-      icon: null,
-    },
-  },
-  5: {
-    active: false,
-    content: {
-      main: null,
-      sub: {
-        milestones: [null, null, null],
-        current: [null, null, null],
-        total: [null, null, null],
-        completion: [],
-      },
-      overall: null,
-      icon: null,
-    },
-  },
-};
-*/
 export const allGoals = {
   1: {
     active: false,
@@ -144,6 +58,76 @@ export const allGoals = {
     },
   },
   5: {
+    active: false,
+    content: {
+      main: null,
+      sub: {
+        milestones: [null, null, null],
+        current: [null, null, null],
+        total: [null, null, null],
+        completion: [],
+      },
+      overall: null,
+      icon: null,
+    },
+  },
+  6: {
+    active: false,
+    content: {
+      main: null,
+      sub: {
+        milestones: [null, null, null],
+        current: [null, null, null],
+        total: [null, null, null],
+        completion: [],
+      },
+      overall: null,
+      icon: null,
+    },
+  },
+  7: {
+    active: false,
+    content: {
+      main: null,
+      sub: {
+        milestones: [null, null, null],
+        current: [null, null, null],
+        total: [null, null, null],
+        completion: [],
+      },
+      overall: null,
+      icon: null,
+    },
+  },
+  8: {
+    active: false,
+    content: {
+      main: null,
+      sub: {
+        milestones: [null, null, null],
+        current: [null, null, null],
+        total: [null, null, null],
+        completion: [],
+      },
+      overall: null,
+      icon: null,
+    },
+  },
+  9: {
+    active: false,
+    content: {
+      main: null,
+      sub: {
+        milestones: [null, null, null],
+        current: [null, null, null],
+        total: [null, null, null],
+        completion: [],
+      },
+      overall: null,
+      icon: null,
+    },
+  },
+  10: {
     active: false,
     content: {
       main: null,
@@ -240,7 +224,7 @@ export const fetchMasterData = async function () {
 };
 
 export const getFullDataObj = async function () {
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 10; i++) {
     if (allGoals[i].active) {
       allGoals[i].content = calcPercentages(allGoals[i].content);
     }
@@ -314,5 +298,5 @@ export const exportHabitsData = async function (num, date) {
 
 export const loadHabitsData = async function () {
   const arrFetched = await getRange(helper.loadUrl);
-  return arrFetched.slice(35, 40);
+  return arrFetched.slice(70, 75);
 };
